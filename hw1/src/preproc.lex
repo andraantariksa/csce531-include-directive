@@ -22,7 +22,7 @@ whitespace      [ \t]+
 
 %%
     /* PREPROC */
-<INITIAL>[#]    {
+<INITIAL>[^#\n]*"#"    {
     //printf("Begin preproc\n");
     BEGIN(PREPROC);
 }
@@ -33,7 +33,10 @@ whitespace      [ \t]+
     printf("#%s", yytext);
     BEGIN(INITIAL);
 }
-<PREPROC>.
+<PREPROC>.   {
+    printf("#%s", yytext);
+    BEGIN(INITIAL);
+}
 <PREPROC>\n  {
     //printf("End preproc. Unrecognized\n");
     BEGIN(INITIAL);
@@ -70,6 +73,7 @@ whitespace      [ \t]+
     //printf("Preproc value=%s\n", yytext);
     BEGIN(PREPROC_DEFINE_END);
 }
+<PREPROC_DEFINE_END>[^\n]
 <PREPROC_DEFINE_END>[\n]    {
     //printf("End preproc define\n");
     BEGIN(INITIAL);

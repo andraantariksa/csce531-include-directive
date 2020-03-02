@@ -1,4 +1,4 @@
-Comments for self-test -------- Sun Mar 1, 2020 at 22:36:44 EST
+Comments for self-test -------- Mon Mar 2, 2020 at 11:46:55 EST
 Checking for automatically generated (illegal) files ... none (OK)
 Building the executable with "make -B" ... succeeded
 
@@ -56,30 +56,7 @@ Running babycpp on test6.c; output sent to test6.i ... finished normally
   ^^^^^
   test6.i exists; comparing with sol'n file with "diff":
     diff test6.i /home/andraantariksa/Projects/csce531/hw1/test/test6.i
-  OUTPUT FILES DIFFER (-5%):
-  vvvvv
-    15c15
-    <         
-    ---
-    > 
-    18c18
-    <         
-    ---
-    > 
-    21c21
-    < 		
-    ---
-    > 
-    24c24
-    < 	
-    ---
-    > 
-    27c27
-    <         
-    ---
-    > 
-  
-  ^^^^^
+  [output files match -- OK]
 Running babycpp on test7.c; output sent to test7.i ... finished normally
   Standard error output:
   vvvvv
@@ -87,22 +64,7 @@ Running babycpp on test7.c; output sent to test7.i ... finished normally
   ^^^^^
   test7.i exists; comparing with sol'n file with "diff":
     diff test7.i /home/andraantariksa/Projects/csce531/hw1/test/test7.i
-  OUTPUT FILES DIFFER (-5%):
-  vvvvv
-    1c1
-    <     	  
-    ---
-    > 
-    10,12c10,12
-    <         int i = ID2;
-    <         int j = ID3;
-    <         char *k = "ID2";
-    ---
-    >     int i = ID2;
-    >     int j = ID3;
-    >     char *k = "ID2";
-  
-  ^^^^^
+  [output files match -- OK]
 Running babycpp on test8.c; output sent to test8.i ... finished normally
   Standard error output:
   vvvvv
@@ -110,14 +72,7 @@ Running babycpp on test8.c; output sent to test8.i ... finished normally
   ^^^^^
   test8.i exists; comparing with sol'n file with "diff":
     diff test8.i /home/andraantariksa/Projects/csce531/hw1/test/test8.i
-  OUTPUT FILES DIFFER (-5%):
-  vvvvv
-    1a2
-    > #defined 17
-    8a10
-    > #defined 17 6
-  
-  ^^^^^
+  [output files match -- OK]
 Running babycpp on test9.c; output sent to test9.i ... finished normally
   Standard error output:
   vvvvv
@@ -9860,5 +9815,5 @@ Running babycpp on test9.c; output sent to test9.i ... finished normally
 Cleaning up ... done
 ######################################################
 Summary for self-test:
-Your current score is 80 percent.
+Your current score is 95 percent.
 ######################################################

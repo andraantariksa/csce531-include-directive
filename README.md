@@ -1,4 +1,4 @@
-# CSCE531 - Include Directive
+# Include Directive
 
 This repository is dedicated for my Compiler Construction (CSCE531) course homework. The code are located in [hw1](hw1)
 
